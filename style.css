@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: rgb(200, 159, 235);
+    background: linear-gradient(90deg, rgba(200, 159, 235, 1) 26%, rgba(93, 105, 190, 1) 100%);
+    display: grid;
+    place-items: center;
+}
+
+.box {
+    height: 450px;
+    width: 250px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    background: rgb(73, 81, 139);
+    background: linear-gradient(13deg, rgba(73, 81, 139, 1) 28%, rgba(119, 78, 140, 1) 100%);
+}
+
+.box h3 {
+    font-size: 15px;
+    position: relative;
+    letter-spacing: 1px;
+    margin: 35px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.time__circle {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid #ffbef454;
+    text-align: center;
+}
+
+.time__circle p {
+    font-size: 18px;
+    margin: 35px 0;
+}
+
+.sec__circle {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    height: 50%;
+    width: 2px;
+    transform-origin: bottom;
+    transition: 1s;
+}
+
+.sec__circle::after {
+    content: "";
+    position: absolute;
+    top: -6px;
+    right: -5px;
+    height: 10px;
+    width: 10px;
+    background-color: #cc05be;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px #ffbef4;
+}
+
+.timer__controls {
+    margin-top: 100px;
+}
+
+span {
+    cursor: pointer;
+}
+
+span:hover {
+    color: rgb(252, 0, 0);
+}
+
+.timer__controls .play__btn {
+    padding: 20px;
+    border-radius: 50%;
+    line-height: 10px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background: #ffbef454;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
